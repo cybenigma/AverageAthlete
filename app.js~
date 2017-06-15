@@ -148,7 +148,9 @@ app.get("/workouts/:user", function(req, res){
     
     });
 
+
 app.listen(port, function(){
+
 	console.log('WorkOut app listening on port ' + port);
  
    });
