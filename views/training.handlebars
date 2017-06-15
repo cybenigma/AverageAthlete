@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="../public/assets/css/athlete.css">
+<script type="text/javascript" src="../public/assets/js/athlete.js"></script>
+
+<div class="body">
+
+<div class="trainLog"><h2>What workout/routine will you do this week? Add your workout/routine.</h2></div>
+
+<!-- < id="train" type="button">Add routine</button> -->
+<a class="btn btn-default" href="#" role="button" id="train">Add routine</a>
+<a class="btn btn-default" href="#" role="button" id="home">home</a>
+
+<h3>Routines Completed</h3>
+<p>
+        {{#each training}}
+          <p>{{Activity}}  {{Date}} </p>
+      	{{#each workoutFile}}
+      		<a class="btn btn-default" href="">{{file}}</a>
+      	{{/each}}
+        {{/each}}
+</p>
+</div>

@@ -1,0 +1,32 @@
+<script type="text/javascript" src="../public/assets/js/athlete.js"></script>
+<link rel="stylesheet" type="text/css" href="../public/assets/css/athlete.css">
+
+   
+<div class="row">
+  <div class="col-sm-6">
+    
+    <h3>Races Completed</h3>   
+    <p>
+        {{#each races}}
+          <p>{{name}} - {{date}}</p>
+        {{/each}}
+    </p>
+
+    <div class="row">
+      <div class="col-sm-3">
+      
+      </div>
+      <div class="col-sm-3">
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="view" value="">
+         <!--  <button id="add" type="submit">Add</button> -->
+          <a class="btn btn-default" href="#" role="button" id="add">Add a Race</a>
+          <a class="btn btn-default" href="#" role="button" id="home">Home</a>
+        </form>
+       
+      </div>
+    </div>
+      
+  </div>
+</div>
+   

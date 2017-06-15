@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>LoginApp</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/athlete.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+	<title>Average Athlete App</title>
 	<link rel="stylesheet" href="/css/bootstrap.css" />
 	<link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body>
 	<div class="container">
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
             {{#if user}}
-              <li role="presentation"><a href="/">Dashboard</a></li>
+              <li role="presentation"><a href="/">Race and Training Dashboard</a></li>
               <li role="presentation"><a href="/users/logout">Logout</a></li>
             {{else}}
               <li role="presentation"><a href="/users/login">Login</a></li>
@@ -19,7 +28,7 @@
             {{/if}}
           </ul>
         </nav>
-        <h3 class="text-muted">LoginApp</h3>
+        <h3 class="text-muted">AverageAthleteApp</h3>
       </div>
 
 
@@ -44,9 +53,22 @@
       </div>
 
       <footer class="footer">
-        <p>&copy; 2015 LoginApp, Inc.</p>
+        <p>&copy; 2017 Average Athlete - Team Berlin, Inc.</p>
       </footer>
 
     </div> <!-- /container -->
+
+    <!-- jQuery -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Moment.js -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js"></script>
+
+    <!-- jQuery -->
+      <script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <!-- Bootstrap JS -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+      <script type="text/javascript" src="assets/js/athlete.js"></script>
 </body>
 </html>

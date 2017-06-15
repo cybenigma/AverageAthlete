@@ -1,0 +1,44 @@
+<link rel="stylesheet" type="text/css" href="../public/assets/css/athlete.css">
+
+<script type="text/javascript" src="../public/assets/js/athlete.js"></script>
+
+<h2>Add a Race</h2>
+
+<form action="/add" method="POST">
+  <textarea name="race">Race: </textarea>
+  <textarea name="placement">Placement: </textarea>
+  <textarea name="date">Date: </textarea>
+  <button class="btn btn-default" type="submit" id="submit">Submit</button>
+</form>
+
+{{!-- <a class="btn btn-default" href="#" role="button" id="submit">Submit</a>
+ --}}
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <h2>   </h2>
+      
+      
+    <div class="row">
+      <div class="col-sm-3">
+      
+      </div>
+      <div class="col-sm-3">
+        <form action="/view?_method=PUT" method="POST">
+          <input type="hidden" name="view" value="">
+         
+         <a class="btn btn-default" href="#" role="button" id="completion">Back to Race Completed screen</a>
+         <a class="btn btn-default" href="#" role="button" id="home">home</a>
+        
+        </form>
+        {{!-- <p>Races</p>
+        {{#each races}}
+          <p>{{name}}</p>
+        {{/each}} --}}
+      </div>
+    </div>
+      
+  </div>
+</div>
+
