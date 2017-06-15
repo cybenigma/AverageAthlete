@@ -10,7 +10,7 @@ This is a user login and registration, race tracker and workout tracker app usin
 
 ### Installation
 
-Loginapp requires [Node.js](https://nodejs.org/) v4+ to run.
+Average Athlete App requires [Node.js](https://nodejs.org/) v4+ to run.
 
 ```sh
 $ npm install
