@@ -8,7 +8,7 @@ var Users= require('./users-db.js');
 
 var app = express();
 
-var port = process.env.PORT || 9000;
+var port = process.env.PORT;
 
 
 app.get("/", function(req, res){
